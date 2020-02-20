@@ -1,4 +1,5 @@
 import React from "react";
+import { Image } from "../Styles";
 
 export default function Photo(props) {
 
@@ -6,7 +7,7 @@ export default function Photo(props) {
     return (
         
         <div className = "photo">
-            <img src = {props.nasaData.hdurl} alt = "NASA" />
+            <Image src = {props.nasaData.hdurl} alt = "NASA" />
         </div>
     );
 }

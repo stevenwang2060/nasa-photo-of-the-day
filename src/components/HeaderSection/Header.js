@@ -1,13 +1,14 @@
 import React from "react";
 import TodayDate from "./TodayDate";
 import PhotoDate from "./PhotoDate";
+import { Head, HeadTitle } from "../Styles";
 
 export default function Header(props) {
     return (
-        <div className = "header">
+        <Head className = "header">
             <TodayDate />
-            <h1>NASA Photo of the Day</h1>
+            <HeadTitle>NASA Photo of the Day</HeadTitle>
             <PhotoDate nasaData={props.nasaData}/>
-        </div>
+        </Head>
     )
 }
